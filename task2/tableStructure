@@ -1,0 +1,14 @@
+Table books
+    id - int(11) autoincrement primary key
+    name - varchar (255)
+
+Table authors
+    id - int(11) autoincrement primary key
+    name - varchar (255)
+
+Table books_to_authors
+    id - int(11) autoincrement primary key
+    book_id - int(11)  FK to books.id
+    author_id - int(11) FK to authors.id
+
+-- 'FK' means 'Foreign Key'
